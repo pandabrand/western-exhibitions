@@ -54,6 +54,29 @@ function western_exhibitions_cpt() {
     'supports' => array( 'title', 'editor', 'thumbnail', 'excerpt' ),
     'has_archive' => true
   ));
+
+  register_post_type( 'press', array(
+    'labels' => array(
+      'name' => 'Press',
+      'singular_name' => 'Press',
+      'menu_name' => 'Press',
+      'name_admin_bar' => 'Press',
+      'add_new' => 'Add New',
+      'add_new_item' => 'Add New Press',
+      'edit_item' => 'Edit Press',
+      'new_item' => 'New Press',
+      'view_item' => 'View Press',
+      'search_items' => 'Search Press',
+      'not_found' => 'No Press found',
+      'not_found_in_trash' => 'No Press in the trash.',
+      'all_items' => 'Press',
+     ),
+    'description' => 'Press for artists at Western Exhibitions or for Western Exhibitions.',
+    'public' => true,
+    'menu_position' => 20,
+    'supports' => array( 'title', 'editor' ),
+    'has_archive' => true
+  ));
 }
 
 /**
