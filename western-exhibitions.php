@@ -29,6 +29,7 @@ function western_exhibitions_cpt() {
     'public' => true,
     'menu_position' => 2,
     'supports' => array( 'title', 'editor', 'thumbnail', 'excerpt' ),
+    'show_in_nav_menus' => true,
     'has_archive' => true
   ));
 
@@ -51,6 +52,7 @@ function western_exhibitions_cpt() {
     'description' => 'Artists that will be showing work at Western Exhibitions.',
     'public' => true,
     'menu_position' => 2,
+    'show_in_nav_menus' => true,
     'supports' => array( 'title', 'editor', 'thumbnail', 'excerpt' ),
     'has_archive' => true
   ));
@@ -74,6 +76,7 @@ function western_exhibitions_cpt() {
     'description' => 'Press for artists at Western Exhibitions or for Western Exhibitions.',
     'public' => true,
     'menu_position' => 2,
+    'show_in_nav_menus' => true,
     'supports' => array( 'title', 'editor' ),
     'has_archive' => true
   ));
