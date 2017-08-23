@@ -57,6 +57,30 @@ function western_exhibitions_cpt() {
     'has_archive' => true
   ));
 
+  register_post_type( 'art_fair', array(
+    'labels' => array(
+      'name' => 'Art Fairs',
+      'singular_name' => 'Art Fair',
+      'menu_name' => 'Art Fair',
+      'name_admin_bar' => 'Art Fair',
+      'add_new' => 'Add New',
+      'add_new_item' => 'Add New Art Fair',
+      'edit_item' => 'Edit Art Fair',
+      'new_item' => 'New Art Fair',
+      'view_item' => 'View Art Fair',
+      'search_items' => 'Search Art Fairs',
+      'not_found' => 'No Art Fairs found',
+      'not_found_in_trash' => 'No Art Fairs in the trash.',
+      'all_items' => 'Art Fairs',
+     ),
+    'description' => 'Art Fairs that Western Exhibitions will be participating in.',
+    'public' => true,
+    'menu_position' => 10,
+    'show_in_nav_menus' => true,
+    'supports' => array( 'title', 'editor', 'thumbnail', 'excerpt' ),
+    'has_archive' => true
+  ));
+
   register_post_type( 'press', array(
     'labels' => array(
       'name' => 'Press',
