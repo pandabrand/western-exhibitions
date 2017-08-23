@@ -164,3 +164,4 @@ function add_custom_taxonomies() {
   ));
 }
 add_action( 'init', 'add_custom_taxonomies', 0 );
+include_once( plugin_dir_path( __FILE__ ).'art-fair-fields.php' );
