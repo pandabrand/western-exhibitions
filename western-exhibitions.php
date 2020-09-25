@@ -104,6 +104,30 @@ function western_exhibitions_cpt() {
     'supports' => array( 'title', 'editor' ),
     'has_archive' => true
   ));
+
+  register_post_type( 'in-depth', array(
+    'labels' => array(
+      'name' => 'In Depth Page',
+      'singular_name' => 'In Depth Page',
+      'menu_name' => 'In Depth Page',
+      'name_admin_bar' => 'In Depth',
+      'add_new' => 'Add New In Depth Page',
+      'add_new_item' => 'Add New In Depth Page',
+      'edit_item' => 'Edit In Depth Page',
+      'new_item' => 'New In Depth Page',
+      'view_item' => 'View In Depth Page',
+      'search_items' => 'Search In Depth Pages',
+      'not_found' => 'No In Depth Pages found',
+      'not_found_in_trash' => 'No In Depth Pages in the trash.',
+      'all_items' => 'In Depth Page',
+     ),
+    'description' => 'In Depth Pages for Western Exhibitions.',
+    'public' => true,
+    'menu_position' => 2,
+    'show_in_nav_menus' => true,
+    'supports' => array( 'title', 'editor' ),
+    'has_archive' => true
+  ));
 }
 
 /**
