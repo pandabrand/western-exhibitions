@@ -125,7 +125,7 @@ function western_exhibitions_cpt() {
     'public' => true,
     'menu_position' => 2,
     'show_in_nav_menus' => true,
-    'supports' => array( 'title', 'thumbnail' ),
+    'supports' => array( 'title', 'editor', 'thumbnail', 'revisions' ),
     'has_archive' => true
   ));
 }
